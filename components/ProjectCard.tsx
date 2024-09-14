@@ -6,19 +6,19 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 
-type ProjectProps = {
-  link: any;
-  title: String;
-  description: String;
-  tags: String[];
-  imageUrl: any;
-};
+// type ProjectProps = {
+//   link: any;
+//   title: String;
+//   description: String;
+//   tags: String[];
+//   imageUrl: any;
+// };
 
-interface ProjectCardProps {
-  project: ProjectProps;
-}
+// interface ProjectCardProps {
+//   project: ProjectProps;
+// }
 
-export const ProjectCard = ({ project }: ProjectCardProps) => {
+export const ProjectCard = ({ project }: { project: any }) => {
   const { link, title, description, tags, imageUrl } = project;
 
   const ref = useRef<HTMLDivElement>(null);
@@ -46,7 +46,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
             <h3 className="text-xl font-semibold text-blue-600">{title}</h3>
             <p className="mt-2 leading-relaxed ">{description}</p>
             <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
-              {tags.map((tag, index) => (
+              {tags.map((tag: string, index: number) => (
                 <li
                   className="px-2 py-1 uppercase tracking-wider text-sm text-blue-600 bg-blue-100 rounded-xl italic"
                   key={index}
