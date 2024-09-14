@@ -69,7 +69,7 @@ const socialLinkItems = [
   },
   {
     label: "@cv",
-    href: "",
+    href: "/rohit-singh-bisht-cv.pdf",
     bgColor: "hover:text-black-600",
     color: "text-black-500",
     icon: PiReadCvLogo,
@@ -88,8 +88,8 @@ const SocialLinks = () => {
           <div className="relative group" key={item.label}>
             {item.label === "@cv" ? (
               <a
-                download={"/rohit-singh-bisht-cv.pdf"}
                 href={item.href}
+                download
                 target="_blank"
                 className={`text-slate-700 p-1 rounded-md flex items-center ${item.bgColor}`}
               >
