@@ -4,21 +4,21 @@ import { useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
-// type ProjectProps = {
-//   link: any;
-//   title: String;
-//   description: String;
-//   tags: String[];
-//   imageUrl: any;
-// };
+type ProjectProps = {
+  link: string;
+  title: string;
+  description: string;
+  tags: string[];
+  imageUrl: StaticImageData;
+};
 
-// interface ProjectCardProps {
-//   project: ProjectProps;
-// }
+interface ProjectCardProps {
+  project: ProjectProps;
+}
 
-export const ProjectCard = ({ project }: { project: any }) => {
+export const ProjectCard = ({ project }: ProjectCardProps) => {
   const { link, title, description, tags, imageUrl } = project;
 
   const ref = useRef<HTMLDivElement>(null);
