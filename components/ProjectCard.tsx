@@ -7,7 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 type ProjectProps = {
-  link: String;
+  link: any;
   title: String;
   description: String;
   tags: String[];
