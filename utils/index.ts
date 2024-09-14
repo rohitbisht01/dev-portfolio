@@ -36,3 +36,23 @@ export const projectsData = [
     link: "https://github.com/rohitbisht01/Covid-19-Tracker",
   },
 ];
+
+export const workExperienceData = [
+  {
+    companyLogo:
+      "https://media.licdn.com/dms/image/v2/C4D0BAQFo-ajAhm_zEg/company-logo_200_200/company-logo_200_200/0/1631363721126?e=1734566400&v=beta&t=8OQxU9xZnJrLszR7sQ9wYLgaZbQPHkP_ZheKT-BoJ7I",
+    companyName: "Auriss Techonologies",
+    position: "Software Developer",
+    description: [
+      {
+        id: 1,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, ratione perspiciatis",
+      },
+      {
+        id: 2,
+        text: " Consequatur mollitia nostrum aspernatur minima culpa quas recusandae,",
+      },
+    ],
+    period: "Dec 2022 - Present",
+  },
+];

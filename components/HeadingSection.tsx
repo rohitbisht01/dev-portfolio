@@ -8,6 +8,7 @@ import { FaGithub } from "react-icons/fa";
 import React from "react";
 import { SiGmail } from "react-icons/si";
 import { PiReadCvLogo } from "react-icons/pi";
+import WorkExperienceSection from "./WorkExperienceSection";
 
 export default function HeadingSection() {
   return (
@@ -33,6 +34,7 @@ export default function HeadingSection() {
 
       <AboutSection />
       <TechStackSection />
+      <WorkExperienceSection />
       <ProjectsSection />
     </div>
   );
@@ -127,18 +129,18 @@ const AboutSection = () => {
           Currently, I work with modern technologies like
           <span className="ml-2 px-2 py-1 text-sm text-blue-600 bg-blue-100 rounded-xl italic">
             NextJs
-          </span>
+          </span>{" "}
           <span className="ml-2 px-2 py-1 text-sm text-blue-600 bg-blue-100 rounded-xl italic">
             Typescript
-          </span>
+          </span>{" "}
           <span className="ml-2 mr-2 px-2 py-1 text-sm text-blue-600 bg-blue-100 rounded-xl italic">
             PostgreSQL
-          </span>
+          </span>{" "}
           allowing me to create both front-end and back-end solutions.
         </div>
         <p className="italic mt-2">
-          Outside of coding, I&apos;m a huge anime fan and currently hooked on
-          hooked <span className="font-bold text-blue-500 ">One Piece</span>.
+          Outside of coding, I&apos;m a huge anime fan and currently hooked on{" "}
+          <span className="font-bold text-blue-500 ">One Piece</span>.
         </p>
       </div>
     </div>

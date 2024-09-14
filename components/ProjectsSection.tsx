@@ -3,7 +3,7 @@ import { ProjectCard } from "./ProjectCard";
 
 export default function ProjectsSection() {
   return (
-    <div className="py-8">
+    <div className="py-2">
       <h1 className="font-bold text-xl">Projects</h1>
       <div className="mt-4">
         {projectsData.map((project) => {
