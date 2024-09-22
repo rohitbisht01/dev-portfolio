@@ -9,6 +9,8 @@ import React from "react";
 import { SiGmail } from "react-icons/si";
 import { PiReadCvLogo } from "react-icons/pi";
 import WorkExperienceSection from "./WorkExperienceSection";
+import AnimatedTextWord from "./AnimateedTextWord";
+import { TextFade } from "./TextFade";
 
 export default function HeadingSection() {
   return (
@@ -22,12 +24,17 @@ export default function HeadingSection() {
           className="rounded-full"
         />
         <div className="flex flex-col">
-          <h1 className="font-bold text-2xl text-blue-600">
-            Rohit Singh Bisht
-          </h1>
-          <p className="italic text-slate-600">
-            Full Stack Developer / Software Engineer
-          </p>
+          <AnimatedTextWord>
+            <div className="font-bold text-2xl text-blue-600">
+              Rohit Singh Bisht
+            </div>
+          </AnimatedTextWord>
+
+          <AnimatedTextWord>
+            <p className="italic text-slate-600">
+              Software Engineer / Full Stack Developer
+            </p>
+          </AnimatedTextWord>
           <SocialLinks />
         </div>
       </div>
@@ -82,9 +89,14 @@ const SocialLinks = () => {
   return (
     <div className="flex items-center gap-2 mt-2">
       {socialLinkItems.map((item) => {
-        const icon = React.createElement(item.icon, {
-          className: `w-4 h-4 ${item.color}`,
-        });
+        const IconComponent = item.icon;
+        // const icon = (
+        //   <AnimatedTextWord text={item.label}>
+        //     {React.createElement(item.icon, {
+        //       className: `w-4 h-4 ${item.color}`,
+        //     })}
+        //   </AnimatedTextWord>
+        // );
 
         return (
           <div className="relative group" key={item.label}>
@@ -95,7 +107,10 @@ const SocialLinks = () => {
                 target="_blank"
                 className={`text-slate-700 p-1 rounded-md flex items-center ${item.bgColor}`}
               >
-                {icon}
+                {/* {icon} */}
+                <AnimatedTextWord>
+                  <IconComponent className={`w-4 h-4 ${item.color}`} />
+                </AnimatedTextWord>
               </a>
             ) : (
               <Link
@@ -103,7 +118,10 @@ const SocialLinks = () => {
                 target="_blank"
                 className={`text-slate-700 p-1 rounded-md flex items-center ${item.bgColor}`}
               >
-                {icon}
+                {/* {icon} */}
+                <AnimatedTextWord>
+                  <IconComponent className={`w-4 h-4 ${item.color}`} />
+                </AnimatedTextWord>
               </Link>
             )}
             {/* Tooltip */}
@@ -119,30 +137,32 @@ const SocialLinks = () => {
 
 const AboutSection = () => {
   return (
-    <div className="flex flex-col text-lg py-8">
-      <div>
-        Hi, I&apos;m a{" "}
-        <span className="text-blue-600 font-bold">Fullstack developer</span>{" "}
-        based in Uttarakhand, India, who enjoys building web applications that
-        provide seamless user experiences.
-        <div className="mt-2">
-          Currently, I work with modern technologies like
-          <span className="ml-2 px-2 py-1 text-sm text-blue-600 bg-blue-100 rounded-xl italic">
-            NextJs
-          </span>{" "}
-          <span className="ml-2 px-2 py-1 text-sm text-blue-600 bg-blue-100 rounded-xl italic">
-            Typescript
-          </span>{" "}
-          <span className="ml-2 mr-2 px-2 py-1 text-sm text-blue-600 bg-blue-100 rounded-xl italic">
-            PostgreSQL
-          </span>{" "}
-          allowing me to create both front-end and back-end solutions.
+    <TextFade direction="up">
+      <div className="flex flex-col text-lg py-8">
+        <div>
+          Hi, I&apos;m a{" "}
+          <span className="text-blue-600 font-bold">Fullstack developer</span>{" "}
+          based in Uttarakhand, India, who enjoys building web applications that
+          provide seamless user experiences.
+          <div className="mt-2">
+            Currently, I work with modern technologies like
+            <span className="ml-2 px-2 py-1 text-sm text-blue-600 bg-blue-100 rounded-xl italic">
+              NextJs
+            </span>{" "}
+            <span className="ml-2 px-2 py-1 text-sm text-blue-600 bg-blue-100 rounded-xl italic">
+              Typescript
+            </span>{" "}
+            <span className="ml-2 mr-2 px-2 py-1 text-sm text-blue-600 bg-blue-100 rounded-xl italic">
+              PostgreSQL
+            </span>{" "}
+            allowing me to create both front-end and back-end solutions.
+          </div>
+          <p className="italic mt-2">
+            Outside of coding, I&apos;m a huge anime fan and currently hooked on{" "}
+            <span className="font-bold text-blue-500 ">One Piece</span>.
+          </p>
         </div>
-        <p className="italic mt-2">
-          Outside of coding, I&apos;m a huge anime fan and currently hooked on{" "}
-          <span className="font-bold text-blue-500 ">One Piece</span>.
-        </p>
       </div>
-    </div>
+    </TextFade>
   );
 };
