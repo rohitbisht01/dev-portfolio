@@ -11,6 +11,7 @@ import { PiReadCvLogo } from "react-icons/pi";
 import WorkExperienceSection from "./WorkExperienceSection";
 import AnimatedTextWord from "./AnimateedTextWord";
 import { TextFade } from "./TextFade";
+import Footer from "./Footer";
 
 export default function HeadingSection() {
   return (
@@ -43,11 +44,12 @@ export default function HeadingSection() {
       <TechStackSection />
       <WorkExperienceSection />
       <ProjectsSection />
+      <Footer />
     </div>
   );
 }
 
-const socialLinkItems = [
+export const socialLinkItems = [
   {
     label: "@github",
     href: "https://github.com/rohitbisht01",
@@ -90,13 +92,6 @@ const SocialLinks = () => {
     <div className="flex items-center gap-2 mt-2">
       {socialLinkItems.map((item) => {
         const IconComponent = item.icon;
-        // const icon = (
-        //   <AnimatedTextWord text={item.label}>
-        //     {React.createElement(item.icon, {
-        //       className: `w-4 h-4 ${item.color}`,
-        //     })}
-        //   </AnimatedTextWord>
-        // );
 
         return (
           <div className="relative group" key={item.label}>
@@ -105,7 +100,7 @@ const SocialLinks = () => {
                 href={item.href}
                 download
                 target="_blank"
-                className={`text-slate-700 p-1 rounded-md flex items-center ${item.bgColor}`}
+                className={`text-slate-700 p-1 rounded-md flex items-center ${item.bgColor} transition ease-in-out delay-150 hover:scale-150`}
               >
                 {/* {icon} */}
                 <AnimatedTextWord>
@@ -116,7 +111,7 @@ const SocialLinks = () => {
               <Link
                 href={item.href}
                 target="_blank"
-                className={`text-slate-700 p-1 rounded-md flex items-center ${item.bgColor}`}
+                className={`text-slate-700 p-1 rounded-md flex items-center ${item.bgColor} transition ease-in-out delay-150 hover:scale-150`}
               >
                 {/* {icon} */}
                 <AnimatedTextWord>
