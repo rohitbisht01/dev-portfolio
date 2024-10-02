@@ -26,6 +26,7 @@ const Background = () => {
     });
   }, []);
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const particlesLoaded = async (container?: Container): Promise<void> => {
     // console.log(container);
   };
