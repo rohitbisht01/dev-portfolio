@@ -6,15 +6,15 @@ const Footer = () => {
   };
 
   return (
-    <div className="flex items-center gap-2 justify-center my-4">
-      © {new Date().getFullYear()}{" "}
-      <span
+    <div className="flex flex-col md:flex-row justify-center my-4 text-sm gap-1 md:gap-2  items-center">
+      <p>© {new Date().getFullYear()}</p>
+      <p
+        className="cursor-pointer text-blue-600 hover:text-blue-800"
         onClick={handleScrollToTop}
-        className="text-blue-600 cursor-pointer hover:text-blue-800"
       >
         Rohit Singh Bisht
-      </span>{" "}
-      All rights reserved.
+      </p>{" "}
+      <p>All rights reserved.</p>
     </div>
   );
 };
