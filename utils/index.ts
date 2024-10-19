@@ -1,3 +1,4 @@
+import blogifyImg from "@/public/blogify.png";
 import covidImg from "@/public/covid.png";
 import Devflow from "@/public/Devflow.png";
 
@@ -18,7 +19,23 @@ export const projectsData = [
     imageUrl: Devflow,
     link: "https://dev-overflow-bice.vercel.app/",
   },
-
+  {
+    title: "Blogify",
+    description:
+      "Blogify is a dynamic blogging platform built with the MERN stack, enabling users to easily write, publish, and engage with content.",
+    tags: [
+      "ReactJs",
+      "RTK",
+      "MongoDB",
+      "NodeJS",
+      "Express",
+      "JWT",
+      "Cloudinary",
+      "Tailwind CSS",
+    ],
+    imageUrl: blogifyImg,
+    link: "https://blogify-jfwc.onrender.com/",
+  },
   {
     title: "Covid-19 Tracker",
     description:

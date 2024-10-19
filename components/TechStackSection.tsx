@@ -16,7 +16,6 @@ const techStackItems = [
   //   "Cloudinary",
   "Stripe",
   "Git/GitHub",
-  "Supabase",
   "VSCode",
   "Shadcn",
 ];
