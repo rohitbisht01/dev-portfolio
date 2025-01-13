@@ -26,15 +26,17 @@ export default function HeadingSection() {
         />
         <div className="flex flex-col">
           <AnimatedTextWord>
-            <div className="font-bold text-2xl text-blue-600">
+            <Link
+              className="font-bold text-2xl text-blue-600"
+              href={"https://www.linkedin.com/in/rohitbisht01/"}
+              target="__blank"
+            >
               Rohit Singh Bisht
-            </div>
+            </Link>
           </AnimatedTextWord>
 
           <AnimatedTextWord>
-            <p className="italic text-slate-600">
-              Software Engineer / Full Stack Developer
-            </p>
+            <p className="italic text-slate-600">Full Stack Developer</p>
           </AnimatedTextWord>
           <SocialLinks />
         </div>

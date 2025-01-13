@@ -7,7 +7,7 @@ const recursive = Recursive({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Rohit Singh Bisht",
   description:
-    "A Full stack developer portfolio with experties in trending technologies",
+    "A Full stack developer portfolio with expertise in trending technologies",
 };
 
 export default function RootLayout({
@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="h-full">
       <head>
         <link
           rel="icon"
@@ -24,9 +24,9 @@ export default function RootLayout({
           sizes="any"
         />
       </head>
-
-      <body className={recursive.className}>
-        <main className="container mx-auto max-w-screen-lg sm:max-w-[700px] lg:max-w-xl xl:max-w-3xl py-6 px-4">
+      <body className={`${recursive.className} relative min-h-full`}>
+        <div className="fixed inset-0 z-[-1] bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <main className="relative z-10 container mx-auto max-w-screen-lg sm:max-w-[700px] lg:max-w-xl xl:max-w-3xl py-6 px-4">
           {children}
         </main>
       </body>

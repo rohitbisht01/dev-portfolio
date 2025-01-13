@@ -1,16 +1,24 @@
-import blogifyImg from "@/public/blogify.png";
+// import blogifyImg from "@/public/blogify.png";
 import covidImg from "@/public/covid.png";
 import Devflow from "@/public/Devflow.png";
+import ProductHunt from "@/public/producthunt.png";
 
 export const projectsData = [
-  // {
-  //   title: "Product Hunt",
-  //   description:
-  //     "Collaborative platform where users can list products and showcase creations. It helps creators display their work, while others explore, engage, and interact with product.",
-  //   tags: ["Next.js", "TypeScript", "PostgreSQL", "Next Auth", "Shadcn"],
-  //   imageUrl: Devflow,
-  //   link: "https://dev-overflow-bice.vercel.app/",
-  // },
+  {
+    title: "Product Hunt",
+    description:
+      "Collaborative platform where users can list products and showcase creations. It helps creators display their work, while others explore, engage, and interact with product.",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "PostgreSQL",
+      "Next Auth",
+      "Stripe",
+      "Shadcn",
+    ],
+    imageUrl: ProductHunt,
+    link: "https://product-hunt-five.vercel.app/",
+  },
   {
     title: "Dev Overflow",
     description:
@@ -20,22 +28,49 @@ export const projectsData = [
     link: "https://dev-overflow-bice.vercel.app/",
   },
   {
-    title: "Blogify",
+    title: "Heart Match",
     description:
-      "Blogify is a dynamic blogging platform built with the MERN stack, enabling users to easily write, publish, and engage with content.",
-    tags: [
-      "ReactJs",
-      "RTK",
-      "MongoDB",
-      "NodeJS",
-      "Express",
-      "JWT",
-      "Cloudinary",
-      "Tailwind CSS",
-    ],
-    imageUrl: blogifyImg,
-    link: "https://blogify-jfwc.onrender.com/",
+      "Find your perfect match with Heart Match. Browse profiles, express interest, and chat when the feeling's mutual.",
+    tags: ["Next.js", "TypeScript", "NextAuth", "Shadcn"],
+    imageUrl: Devflow,
+    link: "https://github.com/rohitbisht01/heart-match",
   },
+  // {
+  //   title: "Quick Cart",
+  //   description:
+  //     "Grocery app featuring seamless shopping, secure authentication, and efficient media management.",
+  //   tags: [
+  //     "ReactJs",
+  //     "RTK",
+  //     "MongoDB",
+  //     "NodeJS",
+  //     "Express",
+  //     "JWT",
+  //     "Cloudinary",
+  //     "Tailwind CSS",
+  //     "Stripe",
+  //     "Resend",
+  //   ],
+  //   imageUrl: Devflow,
+  //   link: "https://dev-overflow-bice.vercel.app/",
+  // },
+  // {
+  //   title: "Blogify",
+  //   description:
+  //     "Blogify is a dynamic blogging platform built with the MERN stack, enabling users to easily write, publish, and engage with content.",
+  //   tags: [
+  //     "ReactJs",
+  //     "RTK",
+  //     "MongoDB",
+  //     "NodeJS",
+  //     "Express",
+  //     "JWT",
+  //     "Cloudinary",
+  //     "Tailwind CSS",
+  //   ],
+  //   imageUrl: blogifyImg,
+  //   link: "https://blogify-jfwc.onrender.com/",
+  // },
   {
     title: "Covid-19 Tracker",
     description:
