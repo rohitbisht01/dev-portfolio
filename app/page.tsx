@@ -1,4 +1,4 @@
-import Background from "@/components/Background";
+// import Background from "@/components/Background";
 import HeadingSection from "@/components/HeadingSection";
 
 export default function Home() {
