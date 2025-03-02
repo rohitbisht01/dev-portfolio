@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Recursive } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
 
 const recursive = Recursive({ subsets: ["latin"] });
 
@@ -27,6 +28,7 @@ export default function RootLayout({
       <body className={`${recursive.className} relative min-h-full`}>
         <div className="fixed inset-0 z-[-1] bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
         <main className="relative z-10 container mx-auto max-w-screen-lg sm:max-w-[700px] lg:max-w-xl xl:max-w-3xl py-6 px-4">
+          {/* <Header /> */}
           {children}
         </main>
       </body>

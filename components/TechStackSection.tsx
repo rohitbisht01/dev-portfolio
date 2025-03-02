@@ -15,6 +15,7 @@ const techStackItems = [
   // "Vercel",
   "Tailwind CSS",
   "AWS",
+  "NextAuth",
   //   "Cloudinary",
   // "Stripe",
   // "Git/GitHub",

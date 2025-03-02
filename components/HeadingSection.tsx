@@ -44,8 +44,10 @@ export default function HeadingSection() {
 
       <AboutSection />
       <TechStackSection />
-      <WorkExperienceSection />
-      <ProjectsSection />
+      {/* <WorkExperienceSection /> */}
+      <div className="mt-6">
+        <ProjectsSection />
+      </div>
       <Footer />
     </div>
   );

@@ -27,14 +27,14 @@ export const projectsData = [
     imageUrl: Devflow,
     link: "https://dev-overflow-bice.vercel.app/",
   },
-  {
-    title: "Heart Match",
-    description:
-      "Find your perfect match with Heart Match. Browse profiles, express interest, and chat when the feeling's mutual.",
-    tags: ["Next.js", "TypeScript", "NextAuth", "Shadcn"],
-    imageUrl: Devflow,
-    link: "https://github.com/rohitbisht01/heart-match",
-  },
+  // {
+  //   title: "Heart Match",
+  //   description:
+  //     "Find your perfect match with Heart Match. Browse profiles, express interest, and chat when the feeling's mutual.",
+  //   tags: ["Next.js", "TypeScript", "NextAuth", "Shadcn"],
+  //   imageUrl: Devflow,
+  //   link: "https://github.com/rohitbisht01/heart-match",
+  // },
   // {
   //   title: "Quick Cart",
   //   description:
