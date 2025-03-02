@@ -8,7 +8,7 @@ import { FaGithub } from "react-icons/fa";
 import React from "react";
 import { SiGmail } from "react-icons/si";
 import { PiReadCvLogo } from "react-icons/pi";
-import WorkExperienceSection from "./WorkExperienceSection";
+// import WorkExperienceSection from "./WorkExperienceSection";
 import AnimatedTextWord from "./AnimateedTextWord";
 import { TextFade } from "./TextFade";
 import Footer from "./Footer";

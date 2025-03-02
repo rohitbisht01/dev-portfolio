@@ -23,6 +23,7 @@ const BlogPage = () => {
   );
 };
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const BlogSection = ({ blog }: { blog: any }) => {
   return (
     <div className="my-8">
