@@ -84,7 +84,7 @@ export const socialLinkItems = [
   },
   {
     label: "@cv",
-    href: "/rohit-singh-bisht-cv.pdf",
+    href: "/RohitBisht-SDE.pdf",
     bgColor: "hover:text-black-600",
     color: "text-black-500",
     icon: PiReadCvLogo,

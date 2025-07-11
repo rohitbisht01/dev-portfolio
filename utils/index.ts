@@ -2,8 +2,24 @@
 import covidImg from "@/public/covid.png";
 import Devflow from "@/public/Devflow.png";
 import ProductHunt from "@/public/producthunt.png";
+import UnderConstruction from "@/public/undercontruction.jpg";
 
 export const projectsData = [
+  {
+    title: "LearnForge",
+    description:
+      "A modern Learning Management System that enables users to create, manage, and enroll in courses with ease. Supports video hosting, secure payments, and a seamless learning experience.",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "PostgreSQL",
+      "AWS S3",
+      "Better Auth",
+      "Stripe",
+    ],
+    imageUrl: UnderConstruction,
+    link: "https://github.com/rohitbisht01/learning-mgmt-app",
+  },
   {
     title: "Product Hunt",
     description:
@@ -27,50 +43,7 @@ export const projectsData = [
     imageUrl: Devflow,
     link: "https://dev-overflow-bice.vercel.app/",
   },
-  // {
-  //   title: "Heart Match",
-  //   description:
-  //     "Find your perfect match with Heart Match. Browse profiles, express interest, and chat when the feeling's mutual.",
-  //   tags: ["Next.js", "TypeScript", "NextAuth", "Shadcn"],
-  //   imageUrl: Devflow,
-  //   link: "https://github.com/rohitbisht01/heart-match",
-  // },
-  // {
-  //   title: "Quick Cart",
-  //   description:
-  //     "Grocery app featuring seamless shopping, secure authentication, and efficient media management.",
-  //   tags: [
-  //     "ReactJs",
-  //     "RTK",
-  //     "MongoDB",
-  //     "NodeJS",
-  //     "Express",
-  //     "JWT",
-  //     "Cloudinary",
-  //     "Tailwind CSS",
-  //     "Stripe",
-  //     "Resend",
-  //   ],
-  //   imageUrl: Devflow,
-  //   link: "https://dev-overflow-bice.vercel.app/",
-  // },
-  // {
-  //   title: "Blogify",
-  //   description:
-  //     "Blogify is a dynamic blogging platform built with the MERN stack, enabling users to easily write, publish, and engage with content.",
-  //   tags: [
-  //     "ReactJs",
-  //     "RTK",
-  //     "MongoDB",
-  //     "NodeJS",
-  //     "Express",
-  //     "JWT",
-  //     "Cloudinary",
-  //     "Tailwind CSS",
-  //   ],
-  //   imageUrl: blogifyImg,
-  //   link: "https://blogify-jfwc.onrender.com/",
-  // },
+
   {
     title: "Covid-19 Tracker",
     description:
