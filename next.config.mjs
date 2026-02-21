@@ -5,6 +5,9 @@ const nextConfig = {
       {
         hostname: "media.licdn.com",
       },
+      {
+        hostname: "via.placeholder.com",
+      },
     ],
   },
 };

@@ -1,26 +1,22 @@
 import { TextFade } from "./TextFade";
 
 const techStackItems = [
-  // "HTML5",
-  // "CSS3",
   "JavaScript",
   "Typescript",
-  "ReactJs",
-  "Redux Toolkit",
   "NextJs",
+  "ReactJs",
+  "AWS",
+  "Redux Toolkit",
+  "Jotai",
   "Node.js",
-  "Express",
   "MongoDB",
   "PostgreSQL",
-  // "Vercel",
-  "Tailwind CSS",
-  "AWS",
   "NextAuth",
-  //   "Cloudinary",
-  // "Stripe",
-  // "Git/GitHub",
-  // "VSCode",
-  // "Shadcn",
+  "Tailwind CSS",
+  "Agentic AI",
+  "Langchain",
+  "LangGraph",
+  "RAGs",
 ];
 
 export const TechStackSection = () => {

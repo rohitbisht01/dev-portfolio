@@ -9,10 +9,6 @@ const navigationLinks = [
     label: "About",
     href: "/",
   },
-  {
-    label: "Blogs",
-    href: "/blogs",
-  },
 ];
 
 const Header = () => {

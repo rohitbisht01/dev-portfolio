@@ -5,7 +5,6 @@ import { TextFade } from "./TextFade";
 const WorkExperienceSection = () => {
   return (
     <TextFade direction="up">
-      <div className="mt-8">
         <h1 className="font-bold text-xl">Work Experience</h1>
         <div className="py-4">
           {workExperienceData.map((experience, index) => {
@@ -35,7 +34,6 @@ const WorkExperienceSection = () => {
             );
           })}
         </div>
-      </div>
     </TextFade>
   );
 };

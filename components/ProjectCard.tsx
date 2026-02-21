@@ -38,7 +38,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
         scale: scaleProgress,
         opacity: opacityProgress,
       }}
-      className="mb-3 sm:mb-4 last:mb-0"
+      className="mb-3 last:mb-0"
     >
       <section className="bg-gray-100 max-w-[45rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8">
         <Link href={link} target="_blank">

@@ -1,25 +1,8 @@
-// import blogifyImg from "@/public/blogify.png";
 import covidImg from "@/public/covid.png";
 import Devflow from "@/public/Devflow.png";
 import ProductHunt from "@/public/producthunt.png";
-import UnderConstruction from "@/public/undercontruction.jpg";
 
 export const projectsData = [
-  {
-    title: "LearnForge",
-    description:
-      "A modern Learning Management System that enables users to create, manage, and enroll in courses with ease. Supports video hosting, secure payments, and a seamless learning experience.",
-    tags: [
-      "Next.js",
-      "TypeScript",
-      "PostgreSQL",
-      "AWS S3",
-      "Better Auth",
-      "Stripe",
-    ],
-    imageUrl: UnderConstruction,
-    link: "https://github.com/rohitbisht01/learning-mgmt-app",
-  },
   {
     title: "Product Hunt",
     description:
@@ -71,5 +54,24 @@ export const workExperienceData = [
       },
     ],
     period: "Dec 2022 - Present",
+  },
+];
+
+export const blogsData = [
+  {
+    title: "My Frontend Interview Experience: Real Questions & Learnings",
+    description:
+      "A detailed breakdown of my frontend interview experience including JavaScript, DSA, machine coding, and system design rounds, along with key learnings and preparation strategies.",
+    date: "Jan 15, 2024",
+    readTime: "6 min",
+    link: "https://medium.com/@rohit_bisht",
+  },
+  {
+    title: "Real-Time Communication in Web Apps: Polling, WebSockets & SSE",
+    description:
+      "Understand different real-time communication techniques including short polling, long polling, WebSockets, and Server-Sent Events (SSE), when to use each, and their trade-offs.",
+    date: "Feb 3, 2024",
+    readTime: "8 min",
+    link: "https://medium.com/@rohit_bisht",
   },
 ];

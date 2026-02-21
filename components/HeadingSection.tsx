@@ -2,13 +2,13 @@ import Image from "next/image";
 import ProfileIcon from "@/public/Profile.jpeg";
 import Link from "next/link";
 import { TechStackSection } from "./TechStackSection";
-import ProjectsSection from "./ProjectsSection";
+import TabsSection from "./TabsSection";
 import { BsLinkedin, BsTwitter } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
 import React from "react";
 import { SiGmail } from "react-icons/si";
 import { PiReadCvLogo } from "react-icons/pi";
-// import WorkExperienceSection from "./WorkExperienceSection";
+import WorkExperienceSection from "./WorkExperienceSection";
 import AnimatedTextWord from "./AnimateedTextWord";
 import { TextFade } from "./TextFade";
 import Footer from "./Footer";
@@ -43,11 +43,9 @@ export default function HeadingSection() {
       </div>
 
       <AboutSection />
+      <WorkExperienceSection />
       <TechStackSection />
-      {/* <WorkExperienceSection /> */}
-      <div className="mt-6">
-        <ProjectsSection />
-      </div>
+      <TabsSection />
       <Footer />
     </div>
   );
