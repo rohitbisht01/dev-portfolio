@@ -16,7 +16,7 @@ export const projectsData = [
       "Shadcn",
     ],
     imageUrl: ProductHunt,
-    link: "https://product-hunt-five.vercel.app/",
+    link: "https://product-hunt-five-bice.vercel.app/",
   },
   {
     title: "Dev Overflow",
