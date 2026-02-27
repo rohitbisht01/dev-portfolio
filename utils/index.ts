@@ -59,12 +59,11 @@ export const workExperienceData = [
 
 export const blogsData = [
   {
-    title: "My Frontend Interview Experience: Real Questions & Learnings",
-    description:
-      "A detailed breakdown of my frontend interview experience including JavaScript, DSA, machine coding, and system design rounds, along with key learnings and preparation strategies.",
-    date: "Jan 15, 2024",
-    readTime: "6 min",
-    link: "https://medium.com/@rohit_bisht",
+    title: "Frontend Interview Experience at Appbrew | Selected",
+    description:"",
+    date: "Feb 27, 2026",
+    readTime: "2 min",
+    link: "https://medium.com/@rohit_bisht/frontend-interview-experience-at-appbrew-selected-dc32325d9e79",
   },
   {
     title: "Real-Time Communication in Web Apps: Polling, WebSockets & SSE",
